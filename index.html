@@ -11,16 +11,16 @@
 
     <!--Navigation bar-->
     <nav>
-        <ul>
-
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">About</a></li>
-            <li><a href="index.html">Calculate</a></li>
+        <ul class="custom-color">
+            <li><a href="index.html" class="text-color">Home</a></li>
+            <li><a href="index.html" class="text-color">About</a></li>
+            <li><a href="index.html" class="text-color">Calculate</a></li>
            
-            <li class = "nav-register-li">Login</li>
-            <li class = "nav-register-li" onclick="openPopup()">Sign up</li>
-
-            <h3 id="company">Carbon Tiptoe!</h3>    
+            <li class = "nav-register-li text-color">Login</li>
+        <div id=’trigger-modal’>
+            <li class = "nav-register-li text-color" onclick="openform()">Sign up</li>
+        </div>      
+            <h3 id="company" class="text-color">Carbon Tiptoe!</h3>    
         </ul>    
     </nav>
 
@@ -28,68 +28,85 @@
 
     <!-- Sourced from https://pixabay.com/vectors/earth-world-globe-map-planet-23546/ -->
     <img alt="Our special planet Earth" src="earth.png" >
-        <h2 class = "footprint">
+        <h2 class = "footprint text-color">
                 Calculate Your Carbon Footprint!            
         <h2>
-        <button class = "btn"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Start</a></button>
+        <button class = "btn custom-color">Start</button>
     </div>
 
 
+    <!--Registeration form -->
+    <div class="form" id="ct-form">
 
-
-    <!--Registeration popup -->
-    <div class="popUp" id="popUp">
-        <div class="popUp-header">
+        <form>
+        <div class="form-header custom-color">
         <div class="title">Registration form</div>
-        <button onclick="closePopup()" class="close-button">&times;</button>
+        <button onclick="closeform()" class="close-button text-color">&times;</button>
         </div>
-        <div class="popUp-body">
 
-            <div class="popUp-body-text">
-            <div id="user">
-                <h2>User Details:</h2>
+        <div class="form-body">
 
-                <h4>Name:</h4>
-                <input type="text">
+            <div class="form-body-text">
+      
+                <div id="userDetails">
+                    <div class="name-field">
+                        <h4 class="name">Name:</h4>
+                        <input type="text" class="first">
+                        <input type="text" class="last ">
+                    </div>
 
-                <h4>Last name:</h4>
-                <input type="text">
-                
-                <h4>Username:</h4>
-                <input type="text">
-                
-                <h4>Password:</h4>
-                <input type="text">
-            </div>
+                    <div class="separate">
+                        <h6 class="first_name under">First-Name</h6>
+                        <h6 class="last_name under">Last_name</h6>
+                    </div>
 
-            <div id="addresses">
-                <h2>Addresses:</h2>
 
-                <h4>Home Address:</h4>
-                <input type="text">
+                    <div class="user">
+                        <h4>Username:</h4>
+                        <input type="text" class="username space">
+                    </div>
 
-                <h4>Work Address:</h4>
-                <input type="text">
-            </div>
+                    <div class="pass">
+                        <h4 >Password:</h4>
+                        <input type="text" class="password space">
+                    </div>
+                </div>
+
+                <div id="addresses">
+                    <div class="field">
+                        <h4 >Home Address:</h4>
+                        <input type="text" class="home-address space">
+                    </div>
+
+                    <div class="field">
+                        <h4 >Work Address:</h4>
+                        <input type="text" class="work-address space">
+                    </div>
             
-            <div id="contacts">
-                <h2>Contacts:</h2>
+                </div>
 
-                <h4>Mobile Number:</h4>
-                <input type="text">
 
-                <h4>Email:</h4>
-                <input type="text">
-            </div>
+                <div id="contacts">
+                    <div class="field">
+                        <h4 >Mobile Number:</h4>
+                        <input type="text" class="number space">
+                    </div>
+
+                    <div class="field">
+                        <h4>Email:</h4>
+                        <input type="text"  class="email space">
+                    </div>
+                </div>
+
 
                 <div class="submit-button">
-                    <button class = "submit">Sign up</button>
+                    <button class = "submit custom-color">Sign up</button>
                 </div>
 
             </div>
         </div>
 
-
+        </form>
 
     </div>
 
